@@ -1,5 +1,7 @@
-var app = require('./app').app;
+require('./index.less');
 
-var body = document.body;
+const config = require('./config/var.js');
 
-body.innerHTML = app();
+let app = document.getElementById('app');
+
+app.innerHTML = JSON.stringify(config);
